@@ -1,0 +1,120 @@
+.formContainer {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4vh;
+}
+
+.formContainer input {
+  padding: 20px;
+  border-radius: 50px;
+  outline: none;
+  width: 600px;
+  border: 2px solid #666;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.formContainer input:focus {
+  border: 2px solid var(--green);
+}
+
+.formContainer button {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.formContainer button img {
+  width: 26px;
+  aspect-ratio: 1/1;
+}
+
+.questionsContainer {
+  overflow: scroll;
+  width: 90vw;
+  max-height: 70vh;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.questionsContainer .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.questionsContainer .pagination button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--background);
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.questionsContainer .pagination button:hover {
+  background-color: var(--green);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.questionsContainer .allQuestions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.noQuestions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .formContainer input {
+    padding: 12px 20px;
+    width: 380px;
+  }
+
+  .formContainer button {
+    width: 80px;
+  }
+
+  .formContainer button img {
+    width: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .formContainer input {
+    padding: 12px 20px;
+    width: 260px;
+  }
+
+  .formContainer button {
+    width: 60px;
+  }
+}

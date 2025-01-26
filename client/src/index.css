@@ -1,0 +1,22 @@
+:root {
+  --green: #00a314;
+  --background: #98df91;
+
+  --text: #323232;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
